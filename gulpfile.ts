@@ -124,9 +124,6 @@ function styles() {
 // css
 function cssStyles() {
   return src(MINI_PATHS.styles.src)
-    .pipe(uncss({
-      html: MINI_PATHS.html.src
-    }))
     .pipe(min_css())
     .pipe(dest(MINI_PATHS.styles.dest));
 }
