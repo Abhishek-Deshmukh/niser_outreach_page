@@ -8,14 +8,14 @@ html(lang="en")
     meta(name="description", content="{{description}}")
     meta(name="author", content="{{author}}")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="./css/style.css")
     //- [if lt IE 9]
     //- script(src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
     //- script(src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js")
     //- [endif]
-    link(rel="shortcut icon" href="{{favicon}}")
+    link(rel="shortcut icon" href="")
     block headVendor
-    script(src="/js/main.js")
+    script(src="./js/main.js")
     block head
-  body(onload="A()")
+  body
     block body

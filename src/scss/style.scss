@@ -6,6 +6,12 @@
   font-weight: 400;
   src: url(../static/fonts/FiraSans-Light.otf);
 }
+@font-face {
+  font-family: 'Alegreya';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../static/fonts/Alegreya-Regular.ttf);
+}
 
 body {
   font-family: 'Fira Sans';
@@ -20,6 +26,7 @@ body {
   height: 8vh;
   display: flex;
   .title {
+    font-family: 'Alegreya';
     margin: auto;
     color: white;
   }
@@ -82,5 +89,31 @@ section {
     .name {
       margin: 5vh 0 0 20vw;
     }
+  }
+}
+
+@media(max-width: 768px) {
+  .title {
+    font-size: 5.5vw !important;
+  }
+  .img {
+    display: flex !important;
+    .name {
+      display: block !important;
+      margin: auto !important;
+      padding: 30px !important;
+    }
+  }
+  .LV {
+    clip-path: none !important;
+    margin-top: 30.67vh !important;
+  }
+  .OD {
+    margin-top: 61.33vh !important;
+  }
+  section {
+    height: 30.67vh !important;
+    width: 100vw !important;
+    margin-left: 0vw !important;
   }
 }
